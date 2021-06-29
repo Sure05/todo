@@ -30,6 +30,6 @@ function ElementTodo(props) {
 }
 
 const areEqual = (prevProps, nextProps) => {
-	return prevProps.element.id === nextProps.element.id;
+	return prevProps.element === nextProps.element;
 }
 export default React.memo(ElementTodo, areEqual);
